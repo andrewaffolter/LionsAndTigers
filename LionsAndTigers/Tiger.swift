@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-//in a struct we can use self, howevever we just cannot set it a value, in a class we can. so we could not do self.age = 2 in a struct.
+//in a struct we can use self, howevever we just cannot set a variables value, in a class we can. so we could not do self.age = 2 in a struct.
 //this is an example of a difference between a struct and a class
 struct Tiger {
     
