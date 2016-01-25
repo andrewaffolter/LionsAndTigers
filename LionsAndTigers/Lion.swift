@@ -17,7 +17,7 @@ class Lion {
     var subspecies = ""
     
     func roar(){
-        println("Lion: Roar Roar")
+        print("Lion: Roar Roar")
     }
     
     func changeToAlphaMale(){

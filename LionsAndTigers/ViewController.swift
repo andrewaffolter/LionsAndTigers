@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         self.myTigers.append(myTiger)
         
         
-        println("My Tiger's name is: \(myTiger.name), it's age is \(myTiger.age), it's breed is \(myTiger.breed) and its' image is \(myTiger.image)")
+        print("My Tiger's name is: \(myTiger.name), it's age is \(myTiger.age), it's breed is \(myTiger.breed) and its' image is \(myTiger.image)")
         
         self.myImageView.image = myTiger.image
         self.nameLabel.text = myTiger.name
@@ -82,14 +82,14 @@ class ViewController: UIViewController {
         myTiger.chuffANumberOfTimes(4)
         secondTiger.chuffANumberOfTimes(2)
         
-        var lion = Lion()
+        let lion = Lion()
         lion.age = 4
         lion.isAlphaMale = false
         lion.image = UIImage(named: "Lion.jpg")
         lion.name = "Mufasa"
         lion.subspecies = "West African"
         
-        var lioness = Lion()
+        let lioness = Lion()
         lioness.age = 3
         lioness.isAlphaMale = false
         lioness.image = UIImage(named: "Lioness.jpeg")
@@ -100,11 +100,11 @@ class ViewController: UIViewController {
         lioness.roar()
         
         lion.changeToAlphaMale()
-        println(lion.isAlphaMale)
+        print(lion.isAlphaMale)
         
         self.lions += [lion, lioness]
         
-        var lionCub = LionCub()
+        let lionCub = LionCub()
         lionCub.age = 1
         lionCub.name = "Simba"
         lionCub.image = UIImage(named: "LionCub1.jpg")
@@ -114,7 +114,7 @@ class ViewController: UIViewController {
         lionCub.roar()
         lionCub.rubLionCubsBelly()
         
-        var femaleLionCub = LionCub()
+        let femaleLionCub = LionCub()
         femaleLionCub.age = 1
         femaleLionCub.name = "Nala"
         femaleLionCub.image = UIImage(named: "LionCub2.jpeg")
